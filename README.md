@@ -86,7 +86,10 @@ Explanations are based on common patterns and limited context.
 
 - http://localhost:4200
 
-### 📡 API Reference
+---
+
+## 📡 API Reference
+
 - POST /api/explain-error
 
 - Request body:
@@ -113,11 +116,15 @@ Explanations are based on common patterns and limited context.
   "error": "Could not explain this error."
 }
 
+---
+
 ### ⚠️ Important Notes
 
 - Short or vague error messages may result in limited explanations
 - AI failures and network issues are handled gracefully
 - No internal stack traces or backend errors are exposed to users
+
+---
 
 ### 🎯 Why This Project Exists
 
@@ -127,6 +134,8 @@ Explanations are based on common patterns and limited context.
 - Clear UX for uncertainty
 - SaaS-ready backend architecture
 - The goal is clarity and trust — not hype.
+
+---
 
 ### 📄 License
 
