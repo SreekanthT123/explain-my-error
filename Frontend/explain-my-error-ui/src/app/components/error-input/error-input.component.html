@@ -1,1 +1,26 @@
-<p>error-input works!</p>
+<div class="w-full h-full flex flex-col">
+  <div class="flex justify-between gap-2 px-4 py-2 bg-gray-200 rounded-t-lg">
+    <div class="flex justify-start items-center gap-2">
+      <div>Select Platform:</div>
+      <select class="border rounded px-2 py-1 text-sm" [(ngModel)]="framework">
+        <option>Other</option>
+        <option>Angular</option>
+        <option>Node.js</option>
+        <option>JavaScript</option>
+      </select>
+    </div>
+    <button
+      (click)="onExplain()"
+      [disabled]="!errorText.trim() || isLoading"
+      class="px-4 rounded-l-full rounded-r-full text-sm bg-blue-600 text-white disabled:bg-blue-300"
+    >
+      Explain Error
+    </button>
+  </div>
+  <textarea [disabled]="isLoading"
+    rows="10"
+    class="w-full h-full outline-none p-4 font-mono text-sm border rounded-b-lg"
+    placeholder="Paste error here..."
+    [(ngModel)]="errorText"
+  ></textarea>
+</div>
