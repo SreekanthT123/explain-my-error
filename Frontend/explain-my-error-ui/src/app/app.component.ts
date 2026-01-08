@@ -37,7 +37,7 @@ export class AppComponent {
           this.isLoading = false;
         },
         error: () => {
-          this.errormessage = 'Could not explain this error';
+          this.errormessage = 'We couldn’t analyze this error. Try adding more context.';
           this.isLoading = false;
         },
       });

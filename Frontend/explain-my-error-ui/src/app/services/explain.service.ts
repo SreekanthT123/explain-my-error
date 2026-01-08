@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ExplainService {
-  private API_URL = 'http://localhost:3000/api/explain-error';
+  private API_URL = 'https://explain-my-error.onrender.com/api/explain-error';
 
   constructor(private http: HttpClient) {}
 
